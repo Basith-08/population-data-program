@@ -121,14 +121,12 @@ public class viewPenduduk extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem2MouseClicked
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        view.viewInput vi = null;
         try {
-            vi = new view.viewInput();
+            new view.viewInput().setVisible(true);
+            this.dispose();
         } catch (SQLException ex) {
             Logger.getLogger(viewPenduduk.class.getName()).log(Level.SEVERE, null, ex);
         }
-        vi.setVisible(true);
-        setLocationRelativeTo(this);
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jMenuItem1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenuItem1MouseClicked
@@ -136,9 +134,8 @@ public class viewPenduduk extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem1MouseClicked
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        view.viewArsip va = null;
-        va = new view.viewArsip();
-        va.setVisible(true);
+        new view.viewArsip().setVisible(true);
+        this.dispose();
         setLocationRelativeTo(this);    }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     /**

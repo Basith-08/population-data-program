@@ -403,9 +403,8 @@ public class viewInput extends javax.swing.JFrame {
                             .addComponent(btnTampil)
                             .addComponent(btnEdit)
                             .addComponent(btnClear))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGap(26, 26, 26)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jMenu1.setText("File");
@@ -480,10 +479,8 @@ public class viewInput extends javax.swing.JFrame {
     }//GEN-LAST:event_tabelMouseClicked
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        view.viewArsip va = null;
-        va = new view.viewArsip();
-        va.setVisible(true);
-        setLocationRelativeTo(this);
+        new view.viewArsip().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformed

@@ -251,14 +251,12 @@ public class viewArsip extends javax.swing.JFrame {
     }//GEN-LAST:event_btnTambilActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        view.viewInput vi = null;
         try {
-            vi = new view.viewInput();
+            new view.viewInput().setVisible(true);
+            this.dispose();
         } catch (SQLException ex) {
             Logger.getLogger(viewArsip.class.getName()).log(Level.SEVERE, null, ex);
         }
-        vi.setVisible(true);
-        setLocationRelativeTo(this);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void btnHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHapusActionPerformed
